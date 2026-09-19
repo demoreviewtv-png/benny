@@ -7,14 +7,39 @@
     <meta name="theme-color" content="#660099">
     <title>About the Developer | Jaxson</title>
     <style>
+      :root {
+        color-scheme: dark;
+        font-family: Arial, Helvetica, sans-serif;
+        --accent: #bb00ff;
+        --background: #000;
+        --surface: #660099;
+        --text: #fff;
+      }
+
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+      }
+
       body {
+        display: grid;
+        min-height: 100vh;
+        margin: 0;
+        padding: clamp(1rem, 4vw, 2rem);
         place-items: center;
-        background-color: #000000
+        background-color: var(--background);
+        color: var(--text);
+      }
+
+      main {
+        width: min(100%, 40rem);
+        text-align: center;
       }
 
       h1 {
         margin: 0 0 1rem;
-        color: #BB00FF;
+        color: var(--accent);
         font-family: "Comic Sans MS", "Comic Sans", cursive;
         font-size: clamp(1.75rem, 5vw, 2.5rem);
         line-height: 1.2;
@@ -30,22 +55,33 @@
       }
 
       p {
-        margin: 0.5;
+        margin: 0 0 0.5rem;
         padding: 1rem;
         border-radius: 0.5rem;
-        background-color: #660099;
-        color: #fff;
+        background-color: var(--surface);
+        color: var(--text);
         line-height: 1.5;
+      }
+
+      p:last-child {
+        margin-bottom: 0;
       }
     </style>
   </head>
   <body>
     <main>
       <h1>Jaxson the Benny Developer Page</h1>
-      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQy4WpsgNEjnx4e7ipK28PQjucjnGmyox29_p8ZquTFNQ&s=10">
+      <img
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQy4WpsgNEjnx4e7ipK28PQjucjnGmyox29_p8ZquTFNQ&amp;s=10"
+        alt="Developer profile image"
+        width="400"
+        height="400"
+        loading="lazy"
+        decoding="async"
+      >
       <p>Uses Claude for his projects 🍅</p>
-      <p>Makes Stuff That May Be Useful! :Happy:</p>
-      <p>Is Learning HTML And Soon BrightScript :Excitement:</p>
+      <p>Makes stuff that may be useful! 😊</p>
+      <p>Is learning HTML and soon BrightScript 🚀</p>
     </main>
   </body>
 </html>
