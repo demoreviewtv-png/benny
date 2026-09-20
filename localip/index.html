@@ -1,22 +1,103 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>"Local IP  file finder" Important Stuff</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Local IP file finder support page">
+    <title>Local IP File Finder | Important Files</title>
     <style>
-      body{
+      :root {
+        color-scheme: dark;
+        --bg: #0a0a12;
+        --panel: #171726;
+        --accent: #bb00ff;
+        --accent-2: #6a5cff;
+        --text: #f4f4f8;
+        --muted: #d0cfe7;
+        --shadow: rgba(0, 0, 0, 0.35);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+        padding: clamp(1rem, 4vw, 2rem);
+        background: radial-gradient(circle at top, #18182d 0%, var(--bg) 60%);
+        color: var(--text);
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 1.6;
+      }
+
+      main {
+        width: min(100%, 52rem);
+        background: rgba(23, 23, 38, 0.96);
+        border: 1px solid rgba(187, 0, 255, 0.4);
+        border-radius: 1rem;
+        box-shadow: 0 1.25rem 2.5rem var(--shadow);
+        padding: clamp(1.25rem, 4vw, 2.5rem);
+      }
+
+      h1 {
+        margin: 0 0 1rem;
+        font-size: clamp(2rem, 5vw, 3rem);
+        line-height: 1.15;
+        color: var(--accent);
         font-family: "Comic Sans MS", "Comic Sans", cursive;
       }
-      h1{
-        color: #BB00FF;
-        font-size: 50px;
+
+      p {
+        margin: 0 0 1rem;
+        color: var(--muted);
+        font-size: 1.05rem;
       }
-      a{
-        color: #f0f0f0;
-        font-size: 40px;
+
+      ul {
+        margin: 1rem 0 0;
+        padding-left: 1.25rem;
+      }
+
+      li {
+        margin-bottom: 0.6rem;
+      }
+
+      a {
+        color: var(--text);
+        text-decoration: none;
+        transition: opacity 0.2s ease, text-decoration-color 0.2s ease;
+      }
+
+      a:hover,
+      a:focus-visible {
+        opacity: 0.9;
+        text-decoration: underline;
+        text-decoration-color: var(--accent-2);
+      }
+
+      .button-link {
+        display: inline-block;
+        margin-top: 1rem;
+        padding: 0.8rem 1.2rem;
+        border-radius: 0.75rem;
+        background: linear-gradient(135deg, var(--accent), var(--accent-2));
+        color: #fff;
+        font-weight: 700;
       }
     </style>
   </head>
   <body>
-    <h1>Important Files To Make <a href=".">"Local IP file finder"</a> work correctly</h1>
+    <main>
+      <h1>Important files for the Local IP file finder</h1>
+      <p>This page explains the files required to keep the app working correctly.</p>
+      <ul>
+        <li><a href="../">Return to the developer page</a></li>
+        <li><a href="./">Reload this page</a></li>
+      </ul>
+      <a class="button-link" href="../">Open the main app</a>
+    </main>
   </body>
 </html>
